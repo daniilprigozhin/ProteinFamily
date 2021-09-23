@@ -1,0 +1,6 @@
+samples: Samples.tsv
+models: Models.tsv
+nbarc_clades: pbNB-ARC_Clade.list
+r1_nbarc_clades: pbNB-ARC_Clade.r1.tree.list
+r2_nbarc_clades: pbNB-ARC_Clade.r2.tree.list
+r3_nbarc_clades: pbNB-ARC_Clade.r3.tree.list
