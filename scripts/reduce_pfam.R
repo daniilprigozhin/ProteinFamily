@@ -80,7 +80,8 @@ tblin <- read_delim(opt$i,
                                   "hmm_from","hmm_to","ali_from","ali_to","env_from","env_to","acc","description_of_target"),
                     comment = "#",
                     trim_ws = TRUE)
-
+problems()
+save.image("Colab.RData")
 # tblin <- read_delim("all_samples.pbNB-ARC.Pfam_scan.out",
 #                     delim = " ",
 #                     col_names = c("target_name","t_accession","tlen","query_name","q_accession","qlen",
