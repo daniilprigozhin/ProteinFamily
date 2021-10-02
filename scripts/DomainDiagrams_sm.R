@@ -22,7 +22,7 @@
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 BiocManager::install("Biostrings")
-package_list<-c("optparse","tidyverse")
+package_list<-c("optparse","tidyverse","Biostrings")
 load_pack <- function(x){
   for( i in x ){
     if( ! require( i , character.only = TRUE ) ){
