@@ -20,6 +20,8 @@
 ## load packages
 
 #package_list<-c("optparse","entropy","dplyr","msa","tidyverse")
+#install.packages("tidyverse")
+#require(tidyverse)
 package_list<-c("optparse","tidyverse")
 
 load_pack <- function(x){
@@ -70,14 +72,14 @@ max_overlap <- opt$a
 #threads <- snakemake@threads
 
 #setwd("~/Dropbox/NLRomes/Maize_NLRome/HMM_search_pbNB-ARC/")
-tblin <- read_delim(opt$i,
+tblin <- read_delim("~/Downloads/Colab_Results/108.pbNB-ARC.Pfam.tbl",
                     delim = " ",
                     col_names = c("target_name","t_accession","tlen","query_name","q_accession","qlen",
                                   "fullseq_Evalue","fullseq_score","fullseq_bias",
                                   "dom_N","dom_of","dom_cEvalue","dom_iEvalue","dom_score","dom_bias",
                                   "hmm_from","hmm_to","ali_from","ali_to","env_from","env_to","acc","description_of_target"),
                     comment = "#",
-                    trim_ws = T)
+                    trim_ws = TRUE)
 
 # tblin <- read_delim("all_samples.pbNB-ARC.Pfam_scan.out",
 #                     delim = " ",
