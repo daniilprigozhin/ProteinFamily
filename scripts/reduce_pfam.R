@@ -72,7 +72,7 @@ max_overlap <- opt$a
 #threads <- snakemake@threads
 
 #setwd("~/Dropbox/NLRomes/Maize_NLRome/HMM_search_pbNB-ARC/")
-tblin <- read_delim("~/Downloads/Colab_Results/108.pbNB-ARC.Pfam.tbl",
+tblin <- read_delim(opt$i,
                     delim = " ",
                     col_names = c("target_name","t_accession","tlen","query_name","q_accession","qlen",
                                   "fullseq_Evalue","fullseq_score","fullseq_bias",
