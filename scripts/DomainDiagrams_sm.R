@@ -19,8 +19,10 @@
 ## ---------------------------
 ## load packages
 #package_list<-c("optparse","entropy","dplyr","msa","tidyverse")
-package_list<-c("optparse","tidyverse","Biostrings")
-
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("Biostrings")
+package_list<-c("optparse","tidyverse")
 load_pack <- function(x){
   for( i in x ){
     if( ! require( i , character.only = TRUE ) ){
