@@ -79,10 +79,8 @@ tblin <- read_delim(opt$i,
                                   "dom_N","dom_of","dom_cEvalue","dom_iEvalue","dom_score","dom_bias",
                                   "hmm_from","hmm_to","ali_from","ali_to","env_from","env_to","acc","description_of_target"),
                     comment = "#",
-                    trim_ws = TRUE)
-problems()
-save.image("Colab.RData")
-stop()
+                    trim_ws = FALSE, show_col_types = FALSE)
+
 # tblin <- read_delim("all_samples.pbNB-ARC.Pfam_scan.out",
 #                     delim = " ",
 #                     col_names = c("target_name","t_accession","tlen","query_name","q_accession","qlen",
